@@ -8,11 +8,11 @@ router.get('/login', (req, res) => {
 
 router.get('/', async (req, res) => {
   try {
-    $(document).ready(function () {
-      let cribsTemplate = $("#cribs-container").html();
-      let compiledCribsTemplate = Handlebars.compile(cribsTemplate);
-     $(".cribs-list").html(compiledCribsTemplate(cribsCard.home));
-    });
+    // $(document).ready(function () {
+    //   let cribsTemplate = $("#cribs-container").html();
+    //   let compiledCribsTemplate = Handlebars.compile(cribsTemplate);
+    //  $(".cribs-list").html(compiledCribsTemplate(cribsCard.home));
+    // });
 
  //example: res.render("login") = file name login.handlebars
  //anything inside the {} is data you want to extract
