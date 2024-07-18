@@ -3,7 +3,7 @@
 [
     {
         "title": "Craftsmen Charm",
-        "price": "3000",
+        "price": "randomPrice",
         "bedroom": "3",
         "bathroom": "3",
         "city": "San Jose",
