@@ -1,7 +1,45 @@
 header, .project:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
-  
+ 
+  .filter-container {
+    font-family: 'Pacifico', cursive;
+    width: 5%;
+    padding: 20px;
+    position: fixed;
+    top: 0px; /* Adjust according to your navbar height */
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgb(27, 71, 77);
+    margin-top: 60px;
+}
+label, input, select, button {
+  padding-right: 30px;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  color: black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0f8bdf;
+}
+option{
+  color: black;
+}
+
   .no-button {
     background: none;
     border: none;
@@ -22,20 +60,18 @@ header, .project:not(:last-child) {
     font-weight: bold;
     margin-left: -5px;
   }
-  
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color:  rgb(2, 15, 20);
-    color: white;
-    position: relative;
+  display: flex;
+  left: 0px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(2, 15, 20);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 99%;
+  z-index: 1000; /* Ensures it stays on top of other elements */
 }
 
 .logo img {
@@ -56,7 +92,7 @@ header, .project:not(:last-child) {
     display: flex;
     gap: 10px;
     position: absolute;
-    right: 20px;
+    right: 50px;
 }
 
 .nav-buttons button {
@@ -74,13 +110,17 @@ header, .project:not(:last-child) {
 body {
   background: url(https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.7,gy-0.8,q-75,rh-3264,rw-5824,th-1080,tw-1920/1243215554102431926.jpeg);
   background-size: cover;
+  margin: 0;
+  padding-left: 70px;
 }
 
 .card-container {
+  margin-left: 5%;
+  margin-top: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap
-  margin-top 100px;
+  
 }
 
 .card{
