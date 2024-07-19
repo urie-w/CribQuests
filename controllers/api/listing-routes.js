@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Listing } = require('../../models');
+const { Cards } = require('../../models');
 const { Op } = require('sequelize');
 
 // Create a new listing
 router.post('/', async (req, res) => {
   try {
-    const newListing = await Listing.create(req.body);
+    const newListing = await Cards.create(req.body);
     res.status(200).json(newListing);
   } catch (err) {
     res.status(400).json(err);
@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
     if (min_price) filters.price = { [Op.gte]: min_price };
     if (max_price) filters.price = { [Op.lte]: max_price };
 
-    const listings = await Listing.findAll({ where: filters });
+    const listings = await Cards.findAll({ where: filters });
     res.status(200).json(listings);
   } catch (err) {
     res.status(500).json(err);
@@ -37,7 +37,7 @@ router.get('/', async (req, res) => {
 // Get a single listing by ID
 router.get('/:id', async (req, res) => {
   try {
-    const listing = await Listing.findByPk(req.params.id);
+    const listing = await Cards.findByPk(req.params.id);
     if (!listing) {
       res.status(404).json({ message: 'No listing found with this id!' });
       return;
@@ -51,7 +51,7 @@ router.get('/:id', async (req, res) => {
 // Update a listing by ID
 router.put('/:id', async (req, res) => {
   try {
-    const updatedListing = await Listing.update(req.body, {
+    const updatedListing = await Cards.update(req.body, {
       where: {
         id: req.params.id,
       },
@@ -71,7 +71,7 @@ router.put('/:id', async (req, res) => {
 // Delete a listing by ID
 router.delete('/:id', async (req, res) => {
   try {
-    const deletedListing = await Listing.destroy({
+    const deletedListing = await Cards.destroy({
       where: {
         id: req.params.id,
       },
