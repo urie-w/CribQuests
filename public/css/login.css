@@ -61,6 +61,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
   }
   body{
     height: 100%;
@@ -70,6 +71,5 @@
     align-items: center;
     background: url(https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.7,gy-0.8,q-75,rh-3264,rw-5824,th-1080,tw-1920/1243215554102431926.jpeg);
     background-size: cover;
-    font-family: "Pacifico", cursive;
   }
   
