@@ -19,8 +19,12 @@
                 CribQuest
             </div>
             <div class="nav-buttons">
-                <button class="bookmark-button">Bookmarks</button>
-                <button class="sign-in-button">Sign In</button>
+                {{#unless loggedIn}}
+                <a href="/login" class="bookmark-button">Sign Up</a>
+                <a href="/login" class="sign-in-button">Log in</a>
+                {{else}}
+                <button class="sign-in-button" id="logout">Log out</button>
+                {{/unless}}
             </div>
         </nav>
     </header>
@@ -42,7 +46,7 @@
         </div>
         {{{body}}}
     </main>
-
+<script src="/js/logout.js"></script>
 </body>
 
 </html>

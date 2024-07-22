@@ -23,6 +23,11 @@ const sess = {
 };
 
 app.use(session(sess));
+app.use((req,res,next)=>{
+  req.session.loggedIn = req.session.loggedIn ?? false;
+  next();
+})
+
 // Handlebars setup
 const hbs = exphbs.create();
 app.engine('handlebars', hbs.engine);
