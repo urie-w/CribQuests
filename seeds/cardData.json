@@ -3,11 +3,11 @@
 [
     {
         "title": "Craftsmen Charm",
-        "price": "600000",
-        "bedroom": "3",
+        "price": "44400",
+        "bedroom": "7",
         "bathroom": "3",
         "city": "Buffalo",
-        "state": "NY",
+        "state": "AZ",
         "image": "/Images/Craftsmen.jpg"
     },
     {
