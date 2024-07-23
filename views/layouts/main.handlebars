@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CribQuest</title>
     <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="/css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
@@ -19,8 +20,12 @@
                 CribQuest
             </div>
             <div class="nav-buttons">
-                <button class="bookmark-button">Bookmarks</button>
-                <button class="sign-in-button">Sign In</button>
+                {{#unless loggedIn}}
+                <a href="/login" class="btn-primary">Sign Up</a>
+                <a href="/login" class="btn-primary">Log in</a>
+                {{else}}
+                <button class="btn-primary" id="logout">Log out</button>
+                {{/unless}}
             </div>
         </nav>
     </header>
@@ -42,7 +47,7 @@
         </div>
         {{{body}}}
     </main>
-
+<script src="/js/logout.js"></script>
 </body>
 
 </html>
