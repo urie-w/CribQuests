@@ -17,7 +17,7 @@ function getRandomBathrooms() {
 }
 
 // Create random amount of bedrooms
-function getRandomBathrooms() {
+function getRandomBedrooms() {
   const min = 3;
   const max = 10;
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -27,8 +27,9 @@ function getRandomBathrooms() {
 // //Generate random data
 function getRandomData() {
   const randomPrice = getRandomPrice();
-  const randomRooms = getRandomRooms();
+  const randomRooms = getRandomBedrooms();
   const randomBathrooms = getRandomBathrooms();
+  const randomState = getRandomStateAbbreviation();
 
   return {
       price: randomPrice,
@@ -37,8 +38,6 @@ function getRandomData() {
       state: randomState
   };
 }
-
-const randomState = getRandomStateAbbreviation();
 
 // get random state
 function getRandomStateAbbreviation() {
@@ -54,18 +53,14 @@ function getRandomStateAbbreviation() {
     return stateAbbreviations[randomState];
 }
 
-//Function to filter by state
-function filterState(state) {
-    document.getElementById('card-container').innerHTML = "state";
-    return data.filter(card => card.state === state);
-}
 
 const userData = require('./userData.json');
 const cardData = require("./cardData.json");
-cardData.forEach((card) => {
+cardData.cards.forEach((card) => {
   card.price = getRandomPrice();
-  card.bedroom = getRandomRooms();
+  card.bedroom = getRandomBedrooms();
   card.bathroom = getRandomBathrooms();
+  card.state = getRandomStateAbbreviation();
 });
 
 const seedDatabase = async () => {
@@ -75,7 +70,7 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
-  await Cards.bulkCreate(cardData)
+  await Cards.bulkCreate(cardData.cards)
 
   process.exit(0);
 };
