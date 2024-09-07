@@ -1,113 +1,59 @@
+{
 
-
-[
-    {
-        "title": "Craftsmen Charm",
-        "price": "600000",
-        "bedroom": "3",
-        "bathroom": "3",
-        "city": "Buffalo",
-        "state": "NY",
-        "image": "/Images/Craftsmen.jpg"
-    },
-    {
-        "title": "Cozy Farmhouse",
-        "price": "500000",
-        "bedroom": "3",
-        "bathroom": "3",
-        "city": "Charlotte",
-        "state": "NC",
-        "image": "/Images/FarmHouse.jpg"
-    },
-    {
-        "title": "Yellow Gingerbread",
-        "price": "250000",
-        "bedroom": "3",
-        "bathroom": "2",
-        "city": "Austin",
-        "state": "TX",
-        "image": "/Images/Gingerbread.jpg"
-    },
-    {
-        "title": "Gorgeous Modern",
-        "price": "700000",
-        "bedroom": "3",
-        "bathroom": "3",
-        "city": "Spokane",
-        "state": "WA",
-        "image": "/Images/Modern.jpg"
-    },
-    {
-        "title": "Stylish Spanish",
-        "price": "450000",
-        "bedroom": "3",
-        "bathroom": "3",
-        "city": "San Diego",
-        "state": "CA",
-        "image": "/Images/Spanish.jpg"
-    },
-    {
-        "title": "Victorian Lady",
-        "price": "648000",
-        "bedroom": "3",
-        "bathroom": "3",
-        "city": "San Jose",
-        "state": "CA",
-        "image": "/Images/Victorian.jpg"
-    },
-    {
-        "title": "Breakwater Lighthouse",
-        "price": "540000",
-        "bedroom": "3",
-        "bathroom": "3",
-        "city": "Marthas Vineyard",
-        "state": "MA",
-        "image": "/Images/Lighthouse.jpg"
-    },
-    {
-        "title": "Aerie Treehouse",
-        "price": "100000",
-        "bedroom": "3",
-        "bathroom": "3",
-        "city": "San Jose",
-        "state": "CA",
-        "image": "/Images/AerieTreehouse.jpg"
-    },
-    {
-        "title": "Draculas Minicastle",
-        "price": "800000",
-        "bedroom": "4",
-        "bathroom": "3",
-        "city": "Sleeply Hollow",
-        "state": "CT",
-        "image": "/Images/Castle.jpg"
-    },
-    {
-        "title": "Alpine Chateau",
-        "price": "999000",
-        "bedroom": "8",
-        "bathroom": "5",
-        "city": "Prestine",
-        "state": "NJ",
-        "image": "/Images/Alpine- Chateau.jpg"
-    },
-    {
-        "title": "Old Country Home",
-        "price": "645000",
-        "bedroom": "3",
-        "bathroom": "3",
-        "city": "Eagle",
-        "state": "ID",
-        "image": "/Images/OldCountry.jpg"
-    },
-    {
-        "title": "Dessert Oasis",
-        "price": "745000",
-        "bedroom": "5",
-        "bathroom": "3",
-        "city": "Phoenix",
-        "state": "AZ",
-        "image": "/Images/Dessert.jpg"
-    }
-
-]
+    "cards": [
+        {
+            "title": "Craftsmen Charm",
+            "price": "44400",
+            "bedroom": "6",
+            "bathroom": "3",
+            "city": "Buffalo",
+            "state": "AZ",
+            "image": "/Images/Craftsmen.jpg"
+        },
+        {
+            "title": "Cozy Farmhouse",
+            "price": "500000",
+            "bedroom": "3",
+            "bathroom": "3",
+            "city": "Charlotte",
+            "state": "NC",
+            "image": "/Images/FarmHouse.jpg"
+        },
+        {
+            "title": "Yellow Gingerbread",
+            "price": "250000",
+            "bedroom": "3",
+            "bathroom": "2",
+            "city": "Austin",
+            "state": "TX",
+            "image": "/Images/Gingerbread.jpg"
+        },
+        {
+            "title": "Gorgeous Modern",
+            "price": "700000",
+            "bedroom": "3",
+            "bathroom": "3",
+            "city": "Spokane",
+            "state": "WA",
+            "image": "/Images/Modern.jpg"
+        },
+        {
+            "title": "Stylish Spanish",
+            "price": "450000",
+            "bedroom": "3",
+            "bathroom": "3",
+            "city": "San Diego",
+            "state": "CA",
+            "image": "/Images/Spanish.jpg"
+        },
+        {
+            "title": "Victorian Lady",
+            "price": "648000",
+            "bedroom": "3",
+            "bathroom": "3",
+            "city": "Portland",
+            "state": "OR",
+            "image": "/Images/Victorian.jpg"
+        }
+    ]
+}
